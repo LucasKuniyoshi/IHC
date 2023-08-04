@@ -48,13 +48,11 @@ function Home(){
           return(
             <div className="recipes">
                 {recipes.map(recipe => (
-                <Recipe
+                <><Recipee
                     key={recipe.recipe.label}
                     title={recipe.recipe.label}
                     //calories={recipe.recipe.calories}
-                    image={recipe.recipe.image}
-                    //ingredients={recipe.recipe.ingredients}
-                />
+                    image={recipe.recipe.image} /><Link to={`/receita/${image.id}`}>Acessar</Link></>
         
                 ))}
             </div>
